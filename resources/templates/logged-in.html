@@ -1,0 +1,29 @@
+<html>
+<body>
+Welcome, {{name}}!<br>
+
+<form action = "create-post" method = "post">
+    <input type = "text" placeholder="Enter your post here" name = "post_text">
+    <button type = "submit">Submit Post</button>
+</form>
+
+<form action = "delete-post" method = "post">
+    <input type = "number" placeholder="Delete Post #" name="delete_id"/>
+    <button type ="submit">Delete Post</button>
+</form>
+
+<form action = "edit-post" method = "post">
+    <input type = "number" placeholder="Edit Post #" name="edit_id"/>
+    <input type = "text" placeholder="Edit Post Text" name="edit_text"/>
+    <button type = "submit">Edit Post</button>
+</form>
+
+
+Posts by {{name}}<br>
+{{#posts}}
+{{id}}. {{textArea}}<br>
+{{/posts}}
+
+<br>
+</body>
+</html>
