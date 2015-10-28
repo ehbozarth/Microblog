@@ -25,6 +25,7 @@ public class Main {
                         return new ModelAndView(new HashMap<>(), "not-logged-in.html");
                     }//End of if UserName is null
 
+
                     HashMap m = new HashMap();
                     m.put("name", userName);
                     m.put("posts", postList);
